@@ -1,0 +1,118 @@
+{
+  "products": [
+    {
+      "title": "The Essential Sectional",
+      "price": "$1,845",
+      "image": "https://cdn.shopify.com/s/files/1/0089/4487/7630/products/SECTIONAL_SOFA_BLUE_VELVET_PERSPECTIVE_VIEW_copy_6573559c-b430-491a-bedb-2cacac53b6fa_640x360_crop_center.png?v=1615480168",
+      "details": "The pitch and proportions of a luxury sofa — for maximum comfort. Wide arms that invite lounging and perching alike. All the beauty and comfort of our sofa, with legroom to spare. Convertible chaise extension can be set up on either side.",
+      "description": "https://images.accentuate.io/?image=https%3A%2F%2Fcdn.accentuate.io%2F5585775558816%2F1618833888887%2F9478F4FC-A4C0-485B-ACED-1AD2A627ADCD_1_105_c.jpeg%3Fv%3D0&c_options=w_800",
+      "description1": "https://cld.accentuate.io/?options=w_768,h_432&image=https://cdn.accentuate.io/5585775558816/1619017152563/Sectional_Dimensions_Front.png",
+      "description2": "https://cld.accentuate.io/?options=w_768,h_432&image=https://cdn.accentuate.io/5585775558816/1619017154255/Sectional_Dimensions_Side.png",
+      "colors": [
+        {
+          "blue": [
+            {
+              "img1": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/36051528384672/10987647402116/SECTIONAL-SOFA--BLUE-VELVET-PERSPECTIVE-VIEW-v1599243357282.png",
+              "img2": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/36051528384672/10987647402116/SECTIONAL-SOFA--BLUE-VELVET-SIDE-VIEW-copy-v1599243369788.png",
+              "img3": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/36051528384672/10987647402116/SECTIONAL-SOFA--BLUE-VELVET-BACK-VIEW-v1599243379206.png"
+            }
+          ]
+        },
+        {
+          "green": [
+            {
+              "img1": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/36051528450208/10987647402116/SECTIONAL-SOFA-GREEN-VELVET-PERSPECTIVE-VIEW-v1599243469482.png",
+              "img2": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/36051528450208/10987647402116/SECTIONAL-SOFA-GREEN-VELVET-SIDE-VIEW-copy-v1599243492111.png",
+              "img3": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/36051528450208/10987647402116/SECTIONAL-SOFA-GREEN-VELVET-BACK-VIEW-v1599243499573.png"
+            }
+          ]
+        },
+        {
+          "mustard": [
+            {
+              "img1": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/36208076882080/10987647402116/132C_1-v1599872127155.png",
+              "img2": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/36208076882080/10987647402116/132C_2-v1599872152759.png",
+              "img3": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/36208076882080/10987647402116/132C_3-v1599872161929.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Essential Sofa",
+      "price": "$1,395",
+      "image": "https://cdn.shopify.com/s/files/1/0089/4487/7630/products/SOFA-BLUE-VELVET-PERSPECTIVE-VIEW-v1599229779928_640x360_crop_center.png?v=1599837399",
+      "details": "The pitch and proportions of a luxury sofa — for maximum comfort. Wide arms that invite lounging and perching alike. Removable back pillows that just may encourage naps.",
+      "description": "https://cld.accentuate.io/5585786044576/1618930665053/20210320_SABAI_DRE_1571.jpg?v=1655839799023&options=w_800",
+      "description1": "https://cld.accentuate.io/?options=w_768,h_432&image=https://cdn.accentuate.io/5585786044576/1655839869830/Sofa_Dimensions_Front.png",
+      "description2": "https://cld.accentuate.io/?options=w_768,h_432&image=https://cdn.accentuate.io/5585786044576/1655839875811/Dimensions-(1).png",
+      "colors": [
+        {
+          "blue": [
+            {
+              "img1": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/41352768913568/10987647402116/SOFA-BLUE-VELVET-PERSPECTIVE-VIEW-v1636999825225.png",
+              "img2": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/41352768913568/10987647402116/SOFA-BLUE-VELVET-SIDE-VIEWnew-v1637001510800.png",
+              "img3": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/41352768913568/10987647402116/SOFA-BLUE-VELVET-BACK-VIEWnew-v1636999573586.png"
+            }
+          ]
+        },
+        {
+          "green": [
+            {
+              "img1": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/41352768454816/10987647402116/SOFA-GREEN-VELVET-PEREPCTIVE-v1637003842525.png",
+              "img2": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/41352768454816/10987647402116/3-SEATER-GREEN-VELVET-SIDE-VIEWnew-copy-v1637011137310.png",
+              "img3": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/41352768454816/10987647402116/SOFA-GREEN-VELVET-BACK-VIEWnew-v1637003848933.png"
+            }
+          ]
+        },
+        {
+          "mustard": [
+            {
+              "img1": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/41352768716960/10987647402116/132C---1-angle-copy-v1637005984978.png",
+              "img2": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/41352768716960/10987647402116/132C---2-angle-v1637005873181.png",
+              "img3": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/41352768716960/10987647402116/132C---3-angle-v1637005879918.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Essential Loveseat Sectional",
+      "price": "$1,445",
+      "image": "https://cdn.shopify.com/s/files/1/0089/4487/7630/products/NAVY_VELVET0000_WHITE_640x360_crop_center.png?v=1643066050",
+      "details": "All the benefits of our Loveseat but with the ability to put your feet up! This is the perfect option for those who prefer the look of our Sectional but are working with a smaller space. Convertible chaise extension can be set up on either side.",
+      "description": "https://cld.accentuate.io/7228454273184/1649452730240/0322-Solo_Green_Chaise-SF-01464-CC.jpg?v=1649453645874&options=w_800",
+      "description1": "https://cld.accentuate.io/?options=w_768,h_432&image=https://cdn.accentuate.io/7228454273184/1643066572588/LVST_sect_Dimensions_Front.png",
+      "description2": "https://cld.accentuate.io/?options=w_768,h_432&image=https://cdn.accentuate.io/7228454273184/1656465148922/Dimensions-(1).png",
+      "colors": [
+        {
+          "blue": [
+            {
+              "img1": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/41352768913568/10987647402116/SOFA-BLUE-VELVET-PERSPECTIVE-VIEW-v1636999825225.png",
+              "img2": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/41352768913568/10987647402116/SOFA-BLUE-VELVET-SIDE-VIEWnew-v1637001510800.png",
+              "img3": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/41352768913568/10987647402116/SOFA-BLUE-VELVET-BACK-VIEWnew-v1636999573586.png"
+            }
+          ]
+        },
+        {
+          "green": [
+            {
+              "img1": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/41352768454816/10987647402116/SOFA-GREEN-VELVET-PEREPCTIVE-v1637003842525.png",
+              "img2": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/41352768454816/10987647402116/3-SEATER-GREEN-VELVET-SIDE-VIEWnew-copy-v1637011137310.png",
+              "img3": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/41352768454816/10987647402116/SOFA-GREEN-VELVET-BACK-VIEWnew-v1637003848933.png"
+            }
+          ]
+        },
+        {
+          "mustard": [
+            {
+              "img1": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/41352768716960/10987647402116/132C---1-angle-copy-v1637005984978.png",
+              "img2": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/41352768716960/10987647402116/132C---2-angle-v1637005873181.png",
+              "img3": "https://cld.accentuate.io/?options=w_768,h_512&image=https://cdn.accentuate.io/41352768716960/10987647402116/132C---3-angle-v1637005879918.png"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

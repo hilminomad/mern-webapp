@@ -1,0 +1,51 @@
+.shop {
+  position: relative;
+  h2 {
+    color: $yellowgreen;
+  }
+  &__floatingbg {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: 0%;
+    right: 20%;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    border-radius: 6px;
+    img {
+      z-index: 0;
+      width: 100%;
+      height: auto;
+
+      //position:absolute;
+    }
+  }
+  &__text_container {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 1em 0;
+    p {
+      width: 100%;
+      z-index: 3;
+      padding: 6px 0;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+  &__hover_effect {
+    p {
+      color: $blue !important;
+    }
+  }
+  &__image_hover {
+    img {
+      z-index: -4 !important;
+    }
+  }
+}
