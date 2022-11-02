@@ -35,7 +35,6 @@ export default function ProductPage() {
   //);
   if (isLoading) return <p>isLoading</p>;
   if (error) return <p>failed to load</p>;
-  console.log(data.data.product.title);
   return (
     <>
       <section className='section product'>

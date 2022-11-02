@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import {
   CarouselProvider,
@@ -130,6 +131,9 @@ export default function ProductInfo({ product }) {
           <div className='more'>
             <h4>Details</h4>
             <p>{details}</p>
+          </div>
+          <div className='btn'>
+            <button className='btn'>ADD TO CART</button>
           </div>
         </div>
       </div>

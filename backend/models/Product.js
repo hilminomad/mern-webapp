@@ -1,8 +1,12 @@
 const mongoose = require('mongoose');
 
-const JobSchema = new mongoose.Schema(
+const ProductSchema = new mongoose.Schema(
   {
     title: {
+      type: String,
+      required: [true, 'please product name'],
+    },
+    image: {
       type: String,
       required: [true, 'please product name'],
     },
@@ -34,4 +38,4 @@ const JobSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model('Job', JobSchema);
+module.exports = mongoose.model('Product', ProductSchema);
