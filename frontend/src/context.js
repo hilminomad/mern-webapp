@@ -5,8 +5,12 @@ const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [products, setProducts] = useState([]);
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [user, setUser] = useState({ name: '', email: '' });
+
+  // function to to GET ALL products from the api
+
   useEffect(() => {
     try {
       const fetchData = async () => {
@@ -19,9 +23,7 @@ const AppProvider = ({ children }) => {
     }
   }, []);
 
-  /*useEffect(() => {
-        console.log(pathname);
-    },[pathname])*/
+  // sidebar functionality
 
   const controlSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -33,13 +35,6 @@ const AppProvider = ({ children }) => {
     setIsSidebarOpen(false);
   };
 
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
   return (
     <AppContext.Provider
       value={{
@@ -47,11 +42,12 @@ const AppProvider = ({ children }) => {
         isSidebarOpen,
         openSidebar,
         closeSidebar,
-        isModalOpen,
-        openModal,
-        closeModal,
         controlSidebar,
         products,
+        loggedIn,
+        setLoggedIn,
+        user,
+        setUser,
       }}
     >
       {children}

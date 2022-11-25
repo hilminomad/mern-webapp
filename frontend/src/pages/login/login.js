@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Login() {
@@ -10,8 +11,7 @@ export default function Login() {
     const user = { email, password };
 
     try {
-      const url = `${rootUrl}/api/v1/auth/login`;
-      // const url = `/api/v1/auth/login`;
+      const url = `/api/v1/auth/login`;
       await fetch(url, {
         method: 'POST',
         headers: {
@@ -34,7 +34,7 @@ export default function Login() {
           </h2>
           <form
             action='submit'
-            onSubmit={hundleSubmit}
+            onSubmit={handleSubmit}
             className='footer__form login__signin_form'
           >
             <input

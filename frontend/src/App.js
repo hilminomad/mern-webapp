@@ -19,10 +19,11 @@ import Cart from './pages/cart/cart';
 import Footer from './components/footer';
 import CreateAccount from './pages/login/createAccount';
 import Account from './pages/login/account';
-
-let loggedIn = false;
+import { useGlobalContext } from './context';
 
 function App() {
+  const { loggedIn } = useGlobalContext();
+  console.log(loggedIn);
   return (
     <Router>
       <Navbar />
@@ -34,14 +35,11 @@ function App() {
         <Route path='shop' element={<Shop />} />
         <Route path='sustainabilty' element={<Sustainability />} />
         <Route path='swatches' element={<Swatches />} />
-        {loggedIn ? (
-          <Route path='account' element={<Account />} />
-        ) : (
-          <Route path='login' element={<Login />}>
-            <Route path='create' element={<CreateAccount />} />
-          </Route>
-        )}
+        <Route path='login' element={<Login />} />
+        <Route path='create' element={<CreateAccount />} />
+        <Route path='account' element={<Account />} />
         <Route path='cart' element={<Cart />} />
+        <Route path='account' element={<Account />} />
         <Route path='product/:productId' element={<ProductPage />} />
       </Routes>
       <Footer />
