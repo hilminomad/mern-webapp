@@ -1,28 +1,30 @@
 import React from 'react';
+import { axios } from 'axios';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
+  const navigate = useNavigate();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!email || !password) return;
     const user = { email, password };
 
     try {
+      console.log('bismillah');
       const url = `/api/v1/auth/login`;
-      await fetch(url, {
-        method: 'POST',
-        headers: {
-          'Content-type': 'application/json',
-        },
-        body: JSON.stringify(user),
-      });
+      await axios.post(url, user);
+      console.log('alhamdolilah');
+      navigate('/');
       setPassword('');
       setEmail('');
     } catch (error) {
-      console.log(error);
+      console.log('rahom salaw');
     }
   };
   return (
@@ -50,6 +52,11 @@ export default function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
+            {error && (
+              <div className='error_container'>
+                <p>eROOOR A KHOUYA</p>
+              </div>
+            )}
             <div className='login__signin_submitbutton'>
               <button type='submit'>
                 <p>SIGN IN</p>

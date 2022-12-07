@@ -15,6 +15,7 @@ export default function Navbar() {
       pathname === 'http://localhost:3000/about' ||
       pathname === 'http://localhost:3000/swatches' ||
       pathname === 'http://localhost:3000/account' ||
+      pathname === 'http://localhost:3000/create' ||
       pathname.startsWith('http://localhost:3000/product/')
     )
       setLinkStyle('nav__links nav__linksy');

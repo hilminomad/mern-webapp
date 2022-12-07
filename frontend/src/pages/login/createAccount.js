@@ -1,6 +1,7 @@
+import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function CreateAccount() {
   const [error, setError] = useState(false);
@@ -8,6 +9,7 @@ export default function CreateAccount() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!email || !password) return;
@@ -15,21 +17,23 @@ export default function CreateAccount() {
 
     try {
       const url = `/api/v1/auth/register`;
-      await fetch(url, {
+      /*await fetch(url, {
         method: 'POST',
         headers: {
           'Content-type': 'application/json',
         },
         body: JSON.stringify(user),
-      });
+      });*/
+      await axios.post(url, user);
       console.log('success');
-      <Navigate to='/login' />;
+      navigate('/login');
       setPassword('');
       setEmail('');
       setName('');
     } catch (error) {
-      console.log('error');
-      setError(error.message);
+      console.log(error.response.data.msg);
+      setErrorMsg(error.response.data.msg);
+      setError(true);
     }
   };
   return (
@@ -59,7 +63,11 @@ export default function CreateAccount() {
                 placeholder='Password'
                 onChange={(e) => setPassword(e.target.value)}
               />
-              {error && <h2>We believe in:</h2>}
+              {error && (
+                <div className='error_container'>
+                  <p>{errorMsg}</p>
+                </div>
+              )}
               <div className='login__signin_submitbutton'>
                 <button type='submit'>
                   <p>SUBMIT</p>
