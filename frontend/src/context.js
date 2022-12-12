@@ -7,7 +7,13 @@ const AppProvider = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [products, setProducts] = useState([]);
   const [loggedIn, setLoggedIn] = useState(false);
-  const [user, setUser] = useState({ name: '', email: '' });
+  const [globalUser, setGlobalUser] = useState({});
+
+  console.log(globalUser);
+
+  if (globalUser.token) {
+    setLoggedIn(true);
+  }
 
   // function to to GET ALL products from the api
 
@@ -46,8 +52,8 @@ const AppProvider = ({ children }) => {
         products,
         loggedIn,
         setLoggedIn,
-        user,
-        setUser,
+        globalUser,
+        setGlobalUser,
       }}
     >
       {children}

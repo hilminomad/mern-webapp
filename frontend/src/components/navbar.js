@@ -5,7 +5,8 @@ import { useGlobalContext } from '../context';
 export default function Navbar() {
   let pathname = window.location.href;
 
-  const { isSidebarOpen, controlSidebar, loggedIn, name } = useGlobalContext();
+  const { isSidebarOpen, controlSidebar, loggedIn, globalUser } =
+    useGlobalContext();
   const [linkStyle, setLinkStyle] = useState('');
   const { productId } = useParams();
   console.log(productId);
@@ -15,6 +16,7 @@ export default function Navbar() {
       pathname === 'http://localhost:3000/about' ||
       pathname === 'http://localhost:3000/swatches' ||
       pathname === 'http://localhost:3000/account' ||
+      pathname === 'http://localhost:3000/login' ||
       pathname === 'http://localhost:3000/create' ||
       pathname.startsWith('http://localhost:3000/product/')
     )
@@ -88,7 +90,7 @@ export default function Navbar() {
               className='link3 hide-for-mobile'
               onClick={() => setLinkStyle('nav__links nav__linksy')}
             >
-              {name}
+              {globalUser.user.name}
             </Link>
           ) : (
             <Link

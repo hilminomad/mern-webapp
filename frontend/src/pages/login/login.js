@@ -1,9 +1,11 @@
+import axios from 'axios';
 import React from 'react';
-import { axios } from 'axios';
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import { useGlobalContext } from '../../context';
 
 export default function Login() {
+  const { setLoggedIn, setGlobalUser } = useGlobalContext();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(false);
@@ -12,14 +14,17 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!email || !password) return;
+    //if (!email || !password) return;
     const user = { email, password };
 
     try {
       console.log('bismillah');
-      const url = `/api/v1/auth/login`;
-      await axios.post(url, user);
-      console.log('alhamdolilah');
+      const url = '/api/v1/auth/login';
+      const res = await axios.post(url, user);
+      console.log(res.data);
+      setGlobalUser(res.data);
+      setLoggedIn(true);
+      console.log('alhamdolilaah');
       navigate('/');
       setPassword('');
       setEmail('');
@@ -75,7 +80,7 @@ export default function Login() {
             New<br></br>Costomer
           </h2>
           <div className='login__signin_submitbutton'>
-            <button type='submit'>
+            <button>
               <Link to={'/create'}>
                 <p>CREATE ACCOUNT</p>
               </Link>

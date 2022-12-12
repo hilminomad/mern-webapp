@@ -19,7 +19,7 @@ const login = async (req, res) => {
   }
   const isPasswordCorrect = await user.comparePassword(password);
   if (!isPasswordCorrect) {
-    throw new UnauthenticatedError('wrong password');
+    throw new BadRequestError('wrong password');
   }
   const token = user.createJWT();
   res.status(StatusCodes.OK).json({ user: { name: user.name }, token });

@@ -17,13 +17,6 @@ export default function CreateAccount() {
 
     try {
       const url = `/api/v1/auth/register`;
-      /*await fetch(url, {
-        method: 'POST',
-        headers: {
-          'Content-type': 'application/json',
-        },
-        body: JSON.stringify(user),
-      });*/
       await axios.post(url, user);
       console.log('success');
       navigate('/login');
