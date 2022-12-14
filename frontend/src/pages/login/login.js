@@ -29,7 +29,9 @@ export default function Login() {
       setPassword('');
       setEmail('');
     } catch (error) {
-      console.log('rahom salaw');
+      console.log(error.response.data.msg);
+      setErrorMsg(error.response.data.msg);
+      setError(true);
     }
   };
   return (
@@ -59,7 +61,7 @@ export default function Login() {
             />
             {error && (
               <div className='error_container'>
-                <p>eROOOR A KHOUYA</p>
+                <p>{errorMsg}</p>
               </div>
             )}
             <div className='login__signin_submitbutton'>
